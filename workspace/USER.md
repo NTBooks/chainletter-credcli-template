@@ -1,9 +1,14 @@
 # User
 
-(Fill this in on first run, or let the registrar collect it from you in chat.)
+(Collected interactively during bootstrap. Update any time the registrar provides new values.)
 
+## Identity
 - **Name:**
 - **Role:**
-- **Issuing organization:** (should match `ISSUER_NAME`)
-- **Default template preference:** (optional — template ID + human name)
 - **Notes for the registrar:**
+
+## Credentials configuration
+- **CREDCLI_TOKEN:** *(paste a fresh token each session if expired)*
+- **Issuer name:**
+- **Issuer logo URL:**
+- **Default template ID:** *(optional)*
