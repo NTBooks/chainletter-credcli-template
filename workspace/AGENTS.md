@@ -18,6 +18,24 @@ You are assisting the registrar (your user). Always confirm with them, in this o
 3. **Issuer identity** — confirm `ISSUER_NAME` and `ISSUER_LOGO_URL` are set in the workspace (`credcli workspace get`).
 4. **Final go-ahead** — summarize what you're about to issue and wait for the registrar to confirm before running the pipeline.
 
+## Selecting a collection for upload
+After registering the token, run `credcli register -i` and note the **Group** value (e.g. `1-nickchainletterio`). This is the only collection group the token is authorised to write to.
+
+When running `credcli collections`, the token's own group may not appear in the list — this is expected, because the collection is created automatically the first time items are uploaded to it.
+
+**If the token has a scoped group:**
+1. Use the Group name from `credcli register -i` as the collection ID.
+2. Append `(Public)` or `(Private)` to match the registrar's chosen network (e.g. `1-nickchainletterio (Public)` for public issuance).
+3. If the group does not appear in `credcli collections`, proceed anyway — it will be created on first send.
+4. If unsure, ask the registrar to confirm the collection name before running `credcli assign`.
+
+**If the token has no scoped group (unscoped token):**
+1. Run `credcli collections` to list available collections.
+2. Present the list to the registrar and ask them to pick one.
+3. Do not guess — wait for the registrar to confirm the collection name before proceeding.
+
+Do not treat the `credcli collections` list as the source of truth for scoped tokens. The token's own group identity (from `credcli register -i`) takes precedence.
+
 ## Single-recipient requests
 Treat them as a 1-row mail merge:
 1. Create a working directory under `~/.credcli/jobs/<short-id>/`.
