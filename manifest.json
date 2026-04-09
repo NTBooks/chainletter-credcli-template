@@ -1,4 +1,6 @@
 {
+  "$schema": "https://agents.pinata.cloud/schemas/manifest.v1.json",
+  "version": 1,
   "agent": {
     "name": "Registrar's Assistant",
     "description": "An assistant for credential registrars. Issues Chainletter credentials on demand or via mail merge by driving the credcli skill on your behalf — single-recipient or batch CSV, always rendered/uploaded/stamped through credcli, never substituted with another renderer. Also helps you design and revise Chainletter templates: generating and editing artwork with Claude, sizing images to spec, cleaning up logos, and laying out fields. You stay in charge; the assistant handles the mechanics and offers design suggestions.",
