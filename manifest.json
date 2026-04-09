@@ -53,6 +53,7 @@
     "slug": "chainletter-credcli",
     "category": "credentials",
     "tags": ["credentials", "certificates", "chainletter", "credcli", "registrar"],
-    "partner": "chainletter"
+    "authorName": "NTBooks",
+    "partnerName": "Chainletter"
   }
 }
