@@ -27,11 +27,6 @@
       "name": "DEFAULT_TEMPLATE_ID",
       "description": "Optional default Chainletter template ID used when a chat request doesn't specify one.",
       "required": false
-    },
-    {
-      "name": "TELEGRAM_BOT_TOKEN",
-      "description": "Optional. Telegram bot token from @BotFather if you want to drive the registrar from Telegram.",
-      "required": false
     }
   ],
   "scripts": {},
@@ -39,16 +34,11 @@
   "tasks": [],
   "skills": [
     {
-      "cid": "bafkreids3bbipzz76zdjds3pme2peb2lw4vhsr3atwvsh2cojvuy56cmj4",
+      "cid": "credcli",
       "name": "credcli",
       "description": "Chainletter credcli skill from clawhub.ai/ntbooks/credcli"
     }
   ],
-  "channels": {
-    "telegram": {
-      "enabled": true
-    }
-  },
   "template": {
     "slug": "chainletter-credcli",
     "category": "credentials",

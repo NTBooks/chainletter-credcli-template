@@ -15,7 +15,8 @@ You must provide:
 3. **`ISSUER_NAME`** and **`ISSUER_LOGO_URL`** — set as Pinata secrets.
 4. **At least one Chainletter template** created in your Chainletter workspace (the registrar will discover it via `credcli template list`).
 5. *(Optional)* **`DEFAULT_TEMPLATE_ID`** — fallback template when a chat request doesn't name one.
-6. *(Optional)* **`TELEGRAM_BOT_TOKEN`** — from @BotFather, if you want Telegram as a channel. Skip for web chat only.
+
+Chat channels (Telegram, Discord, Slack, web) are configured at the Pinata layer after deploy, not in this manifest.
 
 ## Layout
 ```

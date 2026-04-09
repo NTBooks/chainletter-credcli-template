@@ -16,7 +16,7 @@ Read `SKILL.md` from the credcli skill for the authoritative command reference. 
 - `credcli stamp <jobId>`
 
 ## Chat channels
-Telegram is declared in `manifest.json` (gated on `TELEGRAM_BOT_TOKEN`). Discord and Slack can be added the same way if needed.
+Channels (Telegram, Discord, Slack, web) are wired up at the Pinata layer, not by this agent. You receive messages through whichever channel the user has connected.
 
 ## Filesystem
 - Use `~/.credcli/jobs/<short-id>/` as the working directory for any CSVs you generate. Don't scatter files elsewhere.
