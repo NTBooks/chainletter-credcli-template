@@ -1,0 +1,56 @@
+{
+  "agent": {
+    "name": "Registrar's Assistant",
+    "description": "An assistant for credential registrars. Issues Chainletter credentials on demand or via mail merge by driving the credcli skill on your behalf — single-recipient or batch CSV, always rendered/uploaded/stamped through credcli, never substituted with another renderer. Also helps you design and revise Chainletter templates: generating and editing artwork with Claude, sizing images to spec, cleaning up logos, and laying out fields. You stay in charge; the assistant handles the mechanics and offers design suggestions.",
+    "vibe": "precise, credential-focused, no improvisation",
+    "emoji": "🎓"
+  },
+  "secrets": [
+    {
+      "name": "CREDCLI_TOKEN",
+      "description": "Chainletter API token used by `credcli auth login`. Get one at chainletter.io.",
+      "required": true
+    },
+    {
+      "name": "ISSUER_NAME",
+      "description": "Display name for your issuing organization (set on the credcli workspace).",
+      "required": true
+    },
+    {
+      "name": "ISSUER_LOGO_URL",
+      "description": "Public URL to the logo shown on issued credentials.",
+      "required": true
+    },
+    {
+      "name": "DEFAULT_TEMPLATE_ID",
+      "description": "Optional default Chainletter template ID used when a chat request doesn't specify one.",
+      "required": false
+    },
+    {
+      "name": "TELEGRAM_BOT_TOKEN",
+      "description": "Optional. Telegram bot token from @BotFather if you want to drive the registrar from Telegram.",
+      "required": false
+    }
+  ],
+  "scripts": {},
+  "routes": [],
+  "tasks": [],
+  "skills": [
+    {
+      "cid": "bafkreids3bbipzz76zdjds3pme2peb2lw4vhsr3atwvsh2cojvuy56cmj4",
+      "name": "credcli",
+      "description": "Chainletter credcli skill from clawhub.ai/ntbooks/credcli"
+    }
+  ],
+  "channels": {
+    "telegram": {
+      "enabled": true
+    }
+  },
+  "template": {
+    "slug": "chainletter-credcli",
+    "category": "credentials",
+    "tags": ["credentials", "certificates", "chainletter", "credcli", "registrar"],
+    "partner": "chainletter"
+  }
+}
