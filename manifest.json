@@ -42,7 +42,13 @@
   "template": {
     "slug": "chainletter-credcli",
     "category": "credentials",
-    "tags": ["credentials", "certificates", "chainletter", "credcli", "registrar"],
+    "tags": [
+      "credentials",
+      "certificates",
+      "chainletter",
+      "credcli",
+      "registrar"
+    ],
     "authorName": "NTBooks",
     "partnerName": "Chainletter"
   }
